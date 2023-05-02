@@ -17,7 +17,6 @@ const Contact = (props) => {
 
         contacts.splice(i, 1);
         localStorage.setItem("contacts", JSON.stringify(contacts));
-        alert("removed");
     }
 
     return <>
