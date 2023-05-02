@@ -17,9 +17,7 @@ const Contact = (props) => {
 
         contacts.splice(i, 1);
         localStorage.setItem("contacts", JSON.stringify(contacts));
-        setTimeout(() => {
-            window.location.href="/new-phonebook";
-        }, 300);
+        alert("removed");
     }
 
     return <>
