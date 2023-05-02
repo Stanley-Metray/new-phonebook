@@ -40,7 +40,7 @@ const Contact = (props) => {
                             <p className="card-text text-light"> <i className="fas me-2 fa-users"></i> {props.contact.relationship}</p>
                             <div className="d-flex gap-2">
                                 <Link to="/edit-contact" onClick={saveNameToCookie} className="btn btn-primary"><i className="far fa-edit"></i></Link>
-                                <button onClick={deleteContact} className="btn btn-danger"><i className="far fa-trash-alt"></i></button>
+                                <Link to="/" onClick={deleteContact} className="btn btn-danger"><i className="far fa-trash-alt"></i></Link>
                             </div>
                         </div>
                     </div>
