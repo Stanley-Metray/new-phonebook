@@ -43,8 +43,8 @@ const Contact = (props) => {
                             <p className="card-text text-light"> <i className="fas fa-external-link-alt"></i> &nbsp; {props.contact.website}</p>
                             <p className="card-text text-light"> <i className="fas me-2 fa-users"></i> {props.contact.relationship}</p>
                             <div className="d-flex gap-2">
-                                <Link to="/edit-contact" onClick={saveNameToCookie} className="btn btn-primary"><i className="far fa-edit"></i></Link>
-                                <Link to="/" onClick={deleteContact} className="btn btn-danger"><i className="far fa-trash-alt"></i></Link>
+                                <Link to="/edit-contact" onClick={saveNameToCookie} className="btn btn-primary">Create Contact</Link>
+                                <Link to="/" onClick={deleteContact} className="btn btn-danger">Delete Contact</Link>
                             </div>
                         </div>
                     </div>
