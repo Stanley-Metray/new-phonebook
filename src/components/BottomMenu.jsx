@@ -12,12 +12,12 @@ const BottomMenu = () => {
         </ul>
         <Routes>
             <Route exact path="/" element={<ViewAllContacts />}>View Contacts</Route>
-            <Route path="/create-contact" element={<CreateContact />} >Create Contact</Route>
-            <Route path="/view-contacts" element={<ViewAllContacts />}>View Contacts</Route>
+            <Route path="/react-phonebook/create-contact" element={<CreateContact />} >Create Contact</Route>
+            <Route path="/react-phonebook/view-contacts" element={<ViewAllContacts />}>View Contacts</Route>
             
             
             // To Edit or update contact, this Route is not a part of BottomMenu
-            <Route path="/edit-contact" element={<EditContact name={""}/>}>View Contacts</Route>
+            <Route path="react-phonebook/edit-contact" element={<EditContact name={""}/>}>View Contacts</Route>
         </Routes>
     </>
 }
