@@ -11,7 +11,7 @@ const BottomMenu = () => {
             <li><Link title="View Contacts" className="bg-primary bg-gradient text-white" to="/view-contacts"><i className="fas fa-list"></i></Link></li>
         </ul>
         <Routes>
-            <Route path="/" element={<ViewAllContacts />}>View Contacts</Route>
+            <Route exact path="/" element={<ViewAllContacts />}>View Contacts</Route>
             <Route path="/create-contact" element={<CreateContact />} >Create Contact</Route>
             <Route path="/view-contacts" element={<ViewAllContacts />}>View Contacts</Route>
             
