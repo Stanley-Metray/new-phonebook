@@ -6,7 +6,7 @@ const Contact = (props) => {
         localStorage.setItem("editable-contact", JSON.stringify(props.contact));
     }
 
-    const deleteContact = () => {
+    const deleteContact = (e) => {
         let contacts = JSON.parse(localStorage.getItem("contacts"));
         let i = 0;
 
@@ -15,8 +15,12 @@ const Contact = (props) => {
                 break;
         }
 
-        contacts.splice(i, 1);
-        localStorage.setItem("contacts", JSON.stringify(contacts));
+        e.target.value="Deleting...";
+        setTimeout(()=>{
+            contacts.splice(i, 1);
+            localStorage.setItem("contacts", JSON.stringify(contacts));
+            e.target.value="Deleted";
+        }, 300);        
     }
 
     return <>
