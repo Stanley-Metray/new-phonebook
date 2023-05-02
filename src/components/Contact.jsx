@@ -18,7 +18,7 @@ const Contact = (props) => {
         contacts.splice(i, 1);
         localStorage.setItem("contacts", JSON.stringify(contacts));
         setTimeout(() => {
-            window.location.href="/";
+            window.location.href="/view-contacts";
         }, 300);
     }
 
